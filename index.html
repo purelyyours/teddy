@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teddy Day</title>
+  <style>
+    /* Body Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffe4e1, #ffb6c1, #ff69b4);
+      font-family: 'Dancing Script', cursive;
+      color: #4a4a4a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Main container styling */
+    .container {
+      text-align: center;
+    }
+
+    /* Animated Teddy Bear */
+    .teddy {
+      width: 200px;
+      height: auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Header text */
+    h1 {
+      font-size: 3rem;
+      color: #ff6f61;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Message styling */
+    .message {
+      font-size: 1.5rem;
+      color: #4a4a4a;
+      margin: 20px 0;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Button styling */
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    button:hover {
+      background-color: #e05545;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Teddy Day Maa💖! 🧸</h1>
+    <img class="teddy" src="images/teddy1.png" alt="Teddy Bear">
+    <p class="message">You're my cutest teddy, my biggest comfort, and my forever love! ❤️</p>
+    <button onclick="showMessage()">Click for a Special Message</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("Happy Teddy Day, my love! 💖\n\nYou’re not just my teddy; you’re my world. 🧸\nThank you for filling my life with endless joy and love. 🌟");
+    }
+  </script>
+</body>
+</html>
